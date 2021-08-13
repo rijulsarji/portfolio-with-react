@@ -11,6 +11,7 @@ function CardComponent(props) {
     let tags1 = props.tags1;
     let tags2 = props.tags2;
     let cardNum = props.cardNum;
+    let url = props.url;
     
 
     let cardId = "card"+cardNum;
@@ -20,9 +21,26 @@ function CardComponent(props) {
     let tagsID = "card"+cardNum+"tags";
     let tag1ID = "card"+cardNum+"tag1";
     let tag2ID = "card"+cardNum+"tag2";
+
+    // if(props.cardNum=='1')
+    //     var url='https://github.com/rijulsarji/Voice-Assistant-using-gTTS-and-Spreech-Recognition'
+    // else if(props.cardNum=='2')
+    //     var url='https://github.com/rijulsarji/2D-Shooting-Game-Using-PyGame'
+    // else if(props.cardNum=='3')
+    //     var url = "https://github.com/rijulsarji/Hackathon-Moody-AI";
+    // else if(props.cardNum=='4')
+    //     var url = "https://github.com/rijulsarji/Cindy-the-BMI-Calculator";
+    // else if(props.cardNum=='5')
+    //     var url = "https://github.com/rijulsarji/To-do-list";
+    // else if(props.cardNum=='6')
+    //     var url = "https://github.com/rijulsarji/Granny-s-Advice";
+
+    function urlFunc() {
+        window.open(url);
+    }
     
     return (
-        <div className="card" /*onclick link to project id="card2"*/ id={cardId} >
+        <div className="card" /*onclick link to project id="card2"*/ id={cardId} onClick={urlFunc}>
             <header className="article-header" id={headerID}>
                 <div>
                     <div className="category-title" id={titleId}>

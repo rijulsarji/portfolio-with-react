@@ -620,6 +620,33 @@ background-size: 900%;
     margin-right: 10px;
 }
 
+/* CARD 7 */
+
+#card7 {
+    background: rgb(97,39,0);
+    background: radial-gradient(circle, rgba(97,39,0,1) 25%, rgba(23,10,0,1) 100%);
+    animation: card7anim 20s infinite linear forwards;
+    background-size: 900%;
+}
+@keyframes card7anim {
+    0% {background-position: 0%;}
+    100% {background-position: 900%;}
+}
+#card7title {
+    color: rgb(252, 92, 0);
+}
+#card7img {
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#card7tag1, #card7tag2 {
+    color: rgb(252, 92, 0);
+    border-color: rgb(252, 92, 0);
+    margin-right: 10px;
+}
+
 
 
 .projname{
@@ -1000,6 +1027,17 @@ background-size: 900%;
     }
     #card6tag2 {
         margin-top: 5px;
+    }
+
+    /* card 7 */
+    #card7title {
+        line-height: 18px;
+        margin-top: -7px;
+        margin-left: -8px;
+    }
+    #card7img {
+        /* margin-top: -10px; */
+        width: 80px;
     }
 
     .bottom{

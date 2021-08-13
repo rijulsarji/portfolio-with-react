@@ -17,13 +17,15 @@ import Cindy from './IMAGES/Project Logos/Cindy.png';
 import MoodyAI from './IMAGES/Project Logos/MoodyAi.png';
 import Granny from './IMAGES/Project Logos/Grannys.png';
 import Todo from './IMAGES/Project Logos/Todo.png';
+import Antakshari from './IMAGES/Project Logos/Antakshari.png';
+
+
 import Loader from "./Loader";
 
 function Home() {
 
         const [hide, setHide] = useState("none");
         var x=sessionStorage.getItem("isLoaded");
-        console.log(x);
 
         useEffect(() => {
             if(x==0) {
@@ -193,6 +195,7 @@ function Home() {
                         tags1 = "Python"
                         tags2 = "gTTS"
                         cardNum = '1'
+                        url='https://github.com/rijulsarji/Voice-Assistant-using-gTTS-and-Spreech-Recognition'
                     />
 
 
@@ -205,6 +208,7 @@ function Home() {
                         tags1 = "Python"
                         tags2 = "Pygame"
                         cardNum = '2'
+                        url='https://github.com/rijulsarji/2D-Shooting-Game-Using-PyGame'
                     />
 
                     
@@ -212,34 +216,45 @@ function Home() {
 
                     <CardComponent 
                         projTitle = "Moody AI"
-                        projDate = "February 2021"
+                        projDate = "January 2021"
                         imgLink = {MoodyAI}
                         tags1 = "Python"
                         tags2 = "Sound Recognition"
                         cardNum = '3'
+                        url = "https://github.com/rijulsarji/Hackathon-Moody-AI"
                     />
 
 
+                    <CardComponent 
+                        projTitle = "Antakshari"
+                        projDate = "May 2021"
+                        imgLink = {Antakshari}
+                        tags1 = "Java"
+                        tags2 = "HTML & CSS"
+                        cardNum = '7'
+                        url = "https://github.com/rijulsarji/Antakshari"
+                    />
 
 
                     <CardComponent 
                         projTitle = "BMI Calculator"
-                        projDate = "March 2021"
+                        projDate = "April 2021"
                         imgLink = {Cindy}
                         tags1 = "Java"
                         tags2 = "Android Studio"
                         cardNum = '4'
+                        url = "https://github.com/rijulsarji/Cindy-the-BMI-Calculator"
                     />
 
-                    
 
                     <CardComponent 
                         projTitle = "To Do List"
-                        projDate = "April 2021"
+                        projDate = "May 2021"
                         imgLink = {Todo}
                         tags1 = "HTML & CSS"
                         tags2 = "JavaScript"
                         cardNum = '6'
+                        url = "https://github.com/rijulsarji/To-do-list"
                     />
 
                     <CardComponent 
@@ -249,6 +264,7 @@ function Home() {
                         tags1 = "React"
                         tags2 = "HTML & CSS"
                         cardNum = '5'
+                        url = "https://github.com/rijulsarji/Granny-s-Advice"
                     />
 
                 </div>
