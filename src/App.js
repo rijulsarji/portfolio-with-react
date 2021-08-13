@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react';
+import './App.css'
+import Loader from './Loader';
+import Home from './Home.js';
+import Achievement from './Achievement';
+import About from './About';
+
+// import react-router-dom packages
+
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
+  
+  const [hide, setHide] = useState("none");
+
+  var x=sessionStorage.getItem("isLoaded");
+  sessionStorage.setItem("isLoaded", 0);
+  setTimeout(() => {
+    sessionStorage.setItem("isLoaded", 1);
+  }, 1000)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      
+
+      <Router>
+
+        <Switch>
+
+          <Route exact path="/">
+            <Home />
+          </Route>
+
+          <Route exact path="/achievement">
+            <Achievement />
+          </Route>
+
+          <Route exact path="/about">
+            <About />
+          </Route>
+          
+        </Switch>
+      </Router>
+
   );
 }
 

@@ -1,0 +1,427 @@
+:root{
+    --lightest2: rgb(233, 253, 238);
+    --light2: rgb(146, 252, 169);
+    /* --dark: rgb(0, 68, 15); */
+    --dark2: rgb(0, 68, 51);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#body2{
+    overflow-x: hidden;
+    background: var(--lightest2);
+    user-select: none;
+}
+.top2{
+    background: var(--light2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 1s;
+    position: fixed;
+    z-index: 2;
+}
+.rs2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark2);
+    color: var(--light2);
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    margin-left: 40px;
+    transition: background-color 0.5s, color 0.5s;
+    border-radius: 5px;
+    cursor: default;
+    user-select: none;
+}
+.rs2:hover{
+    background: var(--light2);
+    color: var(--dark2);
+}
+.name2{
+    transition: 0.5s 1s;
+    font-size: 35px;
+    color: var(--dark2);
+}
+
+.line2{
+    width: 45px;
+    height: 8px;
+    background: var(--dark2);
+    margin: 6px 0px;
+    margin-right: -15px;
+    user-select: none;
+    transition: 0.5s 0.8s;
+}
+.cross2 i{
+    font-size: 35px;
+    margin-left: 10px;
+    margin-top: 15px;
+    color: var(--light2);
+}
+/* side nav bar */
+.menuButton2 {
+    margin-right: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+#menu2{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    overflow: hidden;
+    /* right: -400px; */
+    right: 0px;
+    background: var(--dark2);
+    height: 100vh;
+}
+.links2{
+    display: flex;
+    padding-top: 25px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    height: 15vh;
+    color: var(--light2);
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#link21 {
+    margin-top: 125px;
+}
+.navbar a{
+    padding: 0;
+    margin: 0;
+    height: 25px;
+    margin-bottom: 80px;
+    transition: text-shadow 0.3s;
+}
+.navbar2 a:hover{
+    text-shadow: white 0px 0px 35px;
+}
+
+.social2{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    margin-top: 20vh;
+    padding-left: 35px;
+    padding-right: 15px;
+}
+.social2 a{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#social21:hover {
+    text-shadow: 0px 0px 35px white;
+}
+#social22:hover {
+    text-shadow: 0px 0px 35px blue;
+}
+#social23:hover {
+    text-shadow: 0px 0px 35px rgb(255, 0, 170);
+}
+#social21 {
+    color: white;
+}
+#social22 {
+    color: rgb(32, 110, 255);
+}
+#social23 {
+    color: palevioletred;
+}
+
+
+.title2{
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: 'Lora', serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--dark2);
+}
+
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-content: space-between;
+    width: 70vw;
+    height: 60vh;
+    margin: 5vh auto 150px auto;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+.achievement{
+    border: 5px solid rgb(20, 92, 36);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 0px;
+    cursor: default;
+    box-shadow: black 0px 0px 5px;
+    text-align: center;
+    transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+    font-family: 'Kanit', sans-serif;
+}
+.achievement:hover{
+    box-shadow: darkgreen 0px 0px 10px;
+    transform: scale(1.02);
+}
+.hackerrank{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* border: 5px solid red; */
+    grid-template-rows: auto;
+    justify-content: center;
+    /* align-items: center; */
+    column-gap: 5px;
+    row-gap: gap;
+    height: 100%;
+    width: 100%;
+}
+.hackerrank img{
+    width: 100px;
+}
+.hackerrank i{
+    font-size: 16px;
+}
+
+.achievement p{
+    font-size: 20px;
+}
+.badge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+    /* border: 5px solid orangered; */
+}
+.badge:hover{
+    transform: scale(1.1);
+}
+.achievement:nth-child(1){
+    grid-column-start: span 2;
+    grid-row-start: span 1;
+}
+
+/* hackathon */
+.hack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hack img{
+    width: 150px;
+}
+#hack2{
+    width: 250px;
+    padding-top: 50px; 
+    margin-bottom: 50px;
+}
+#nasaHack{
+    width: 150px;
+}
+#nielit{
+    width: 210px;
+    margin-bottom: 90px; 
+    padding-top: 30px;
+}
+
+
+
+
+
+/* optimising on phone */
+@media screen and (max-width: 450px) {
+    html{
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    #body2{
+        overflow-x: hidden;
+        background: var(--lightest2);
+        /* background: black; */
+    }
+    .top2{
+        height: 7vh;
+    }
+    .rs2{
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        border-radius: 4px;
+    }
+    .rs2:hover{
+        background: var(--dark2);
+        color: var(--light2);
+    }
+    .line2{
+        width: 30px;
+        height: 5px;
+        margin: 6px 0px;
+        margin-right: -15px;
+        transition: 0.5s 0.8s;
+        user-select: none;
+        /* margin-right: 10px; */
+    }
+    /* side nav bar */
+    #menu2{
+        right: -150px;
+        /* right: 0px; */
+        width: 150px;
+    }
+    .cross2 i{
+        margin-top: 45px;
+    }
+    
+    .links2{
+        font-size: 15px;
+        /* padding-top: 20px !important; */
+        /* margin-top: 0px !important; */
+        margin-bottom: 50px !important;
+        height: 15vh;
+    }
+    #link21 {
+        margin-top: 85px;
+    }
+    .navbar2 a{
+        padding: 0;
+        margin: 0;
+        height: 25px;
+        margin-bottom: 50px;
+        transition: text-shadow 0.3s;
+    }
+    .social2{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        margin-top: 15vh;
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+    .social2 a{
+        margin-left: 10px;
+        margin-right: 10px
+    }
+
+    .title2{
+        /* font-family: 'Noto Sans JP', sans-serif; */
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .board{
+        display: grid;
+        grid-template-columns: 45vw 45vw;
+        align-content: space-between;
+        width: 10vw;
+        height: 80vh;
+        margin-top: 5vh;
+        margin-bottom: 150px;
+        margin-left: 10px;
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+    .achievement{
+        border: 5px solid rgb(20, 92, 36);
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 20px;
+        padding-top: 0px;
+        cursor: default;
+        box-shadow: black 0px 0px 5px;
+        text-align: center;
+        transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+        font-family: 'Kanit', sans-serif;
+    }
+
+    .hack{
+        width: 50vw;
+    }
+    .hackerrank img{
+        margin-top: 15px;
+        width: 40px;
+    }
+    
+    .achievement p{
+        font-size: 15px;
+        /* white-space: nowrap; */
+    }
+
+
+    /* hackathon */
+
+    .hack img{
+        width: 60px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .hack p{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .hackerrank p{
+        white-space: nowrap;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    #CStar{
+        margin-top: 15px;
+    }
+    #star3{
+        white-space: nowrap;
+    }
+    #hack2{
+        width: 110px;
+        padding-top: 35px;
+        margin-bottom: 30px;
+        padding-bottom: 0px;
+    }
+    #nasaHack{
+        width: 80px;
+    }
+    #nielit{
+        width: 100px;
+        margin-top: 15px;
+        margin-bottom: 70px; 
+        padding-top: 0px;
+    }
+    #nasaP{
+        word-wrap: normal;
+    }
+    
+}
