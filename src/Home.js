@@ -257,7 +257,7 @@ function Home() {
                         url = "https://github.com/rijulsarji/To-do-list"
                     />
 
-                    <CardComponent 
+                    {/* <CardComponent 
                         projTitle = "Granny's Advice"
                         projDate = "June 2021"
                         imgLink = {Granny}
@@ -265,7 +265,7 @@ function Home() {
                         tags2 = "HTML & CSS"
                         cardNum = '5'
                         url = "https://github.com/rijulsarji/Granny-s-Advice"
-                    />
+                    /> */}
 
                 </div>
             </div>
