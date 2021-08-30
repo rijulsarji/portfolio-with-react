@@ -82,6 +82,7 @@ html{
     margin-left: 10px;
     margin-top: 15px;
     color: rgb(174, 202, 255);
+    cursor: pointer;
 }
 /* side nav bar */
 #menu1{
@@ -422,11 +423,8 @@ html{
     background: rgb(255,255,255);
 background: radial-gradient(circle, rgba(255,255,255,1) 25%, rgba(164,255,249,1) 100%);
     background-size: 900%;
-    animation: card1anim 20s linear infinite forwards;
-}
-@keyframes card1anim {
-    0% {background-position: 0%;}
-    100% {background-position: 900%;}
+    background-position: 20%;
+    /* animation: card1anim 20s linear infinite forwards; */
 }
 #card1title {
     color: rgb(0, 179, 179);
@@ -457,11 +455,8 @@ background: radial-gradient(circle, rgba(255,255,255,1) 25%, rgba(164,255,249,1)
     background: rgb(62,41,0);
 background: radial-gradient(circle, rgba(62,41,0,1) 17%, rgba(27,18,0,1) 100%);
     background-size: 900%;
-    animation: card2anim 20s linear infinite forwards;
-}
-@keyframes card2anim {
-    0% {background-position: 0%;}
-    100% {background-position: 900%;}
+    background-position: 20%;
+    /* animation: card2anim 20s linear infinite forwards; */
 }
 #card2title {
     color: rgb(197, 145, 0);
@@ -497,11 +492,8 @@ background: radial-gradient(circle, rgba(62,41,0,1) 17%, rgba(27,18,0,1) 100%);
     background: rgb(0,71,62);
 background: radial-gradient(circle, rgba(0,71,62,1) 25%, rgba(3,29,26,1) 100%);
 background-size: 900%;
-    animation: card3anim 20s infinite linear forwards;
-}
-@keyframes card3anim {
-    0% {background-position: 0%;}
-    100% {background-position: 900%;}
+background-position: 20%;
+    /* animation: card3anim 20s infinite linear forwards; */
 }
 #card3title {
     color: rgb(0, 255, 191);
@@ -530,12 +522,9 @@ background-size: 900%;
 #card4 {
     background: rgb(171,215,255);
     background: radial-gradient(circle, rgba(171,215,255,1) 0%, rgba(173,214,255,1) 30%, rgba(107,183,255,1) 62%, rgba(40,149,255,1) 100%);
-    animation: card4anim 20s infinite linear forwards;
+    /* animation: card4anim 20s infinite linear forwards; */
     background-size: 900%;
-}
-@keyframes card4anim {
-    0% {background-position: 0%;}
-    100% {background-position: 900%;}
+    background-position: 20%;
 }
 #card4title {
     color: rgb(17,79,130);
@@ -568,16 +557,12 @@ background-size: 900%;
     /* background: linear-gradient(90deg, rgb(186, 227, 255), rgb(5,5,90),rgb(186, 227, 255)); */
     background: rgb(0,53,96);
     background: radial-gradient(circle, rgba(0,53,96,1) 0%, rgba(10,53,82,1) 35%, rgba(0,33,56,1) 66%, rgba(0,25,50,1) 100%);background-size: 900%;
-    animation-name: card5anim;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    background-position: 20%;
 }
-@keyframes card5anim {
-    0% {background-position: 0%;}
-    100% {background-position: 900%;}
-}
+/* @keyframes card5anim { */
+    /* 0% {background-position: 0%;} */
+    /* 100% {background-position: 900%;} */
+/* } */
 #card5title {
     color: lightskyblue;
 }
@@ -598,12 +583,9 @@ background-size: 900%;
 #card6 {
     background: rgb(28,0,93);
     background: radial-gradient(circle, rgba(28,0,93,1) 12%, rgba(82,0,64,1) 100%);
-    animation: card4anim 20s infinite linear forwards;
+    /* animation: card4anim 20s infinite linear forwards; */
     background-size: 900%;
-}
-@keyframes card6anim {
-    0% {background-position: 0%;}
-    100% {background-position: 900%;}
+    background-position: 20%;
 }
 #card6title {
     color: rgb(255,131,168);
@@ -625,12 +607,9 @@ background-size: 900%;
 #card7 {
     background: rgb(97,39,0);
     background: radial-gradient(circle, rgba(97,39,0,1) 25%, rgba(23,10,0,1) 100%);
-    animation: card7anim 20s infinite linear forwards;
+    /* animation: card7anim 20s infinite linear forwards; */
     background-size: 900%;
-}
-@keyframes card7anim {
-    0% {background-position: 0%;}
-    100% {background-position: 900%;}
+    background-position: 20%;
 }
 #card7title {
     color: rgb(252, 92, 0);
@@ -647,6 +626,29 @@ background-size: 900%;
     margin-right: 10px;
 }
 
+/* CARD 8 */
+
+#card8 {
+    background: rgb(10,17,79);
+    background: radial-gradient(circle, rgba(10,17,79,1) 28%, rgba(0,0,0,1) 100%);
+    /* animation: card7anim 20s infinite linear forwards; */
+    background-size: 900%;
+    background-position: 20%;
+}
+#card8title {
+    color: #cce6ff;
+}
+#card8img {
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#card8tag1, #card8tag2 {
+    color: #cce6ff;
+    border-color: #cce6ff;
+    margin-right: 10px;
+}
 
 
 .projname{
@@ -1038,6 +1040,20 @@ background-size: 900%;
     #card7img {
         /* margin-top: -10px; */
         width: 80px;
+    }
+
+    /* card 8 */
+    #card8title {
+        line-height: 18px;
+        margin-top: -7px;
+        margin-left: -8px;
+    }
+    #card8img {
+        /* margin-top: -10px; */
+        width: 70px;
+    }
+    #card8tag2 {
+        margin-top: 5px;
     }
 
     .bottom{

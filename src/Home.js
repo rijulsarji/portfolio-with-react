@@ -15,9 +15,9 @@ import Amanda from './IMAGES/Project Logos/Amanda.png';
 import pyGame from './IMAGES/Project Logos/pyGame.png';
 import Cindy from './IMAGES/Project Logos/Cindy.png';
 import MoodyAI from './IMAGES/Project Logos/MoodyAi.png';
-import Granny from './IMAGES/Project Logos/Grannys.png';
 import Todo from './IMAGES/Project Logos/Todo.png';
 import Antakshari from './IMAGES/Project Logos/Antakshari.png';
+import Bookzilla from './IMAGES/Project Logos/Bookzilla.png'
 
 
 import Loader from "./Loader";
@@ -211,8 +211,6 @@ function Home() {
                         url='https://github.com/rijulsarji/2D-Shooting-Game-Using-PyGame'
                     />
 
-                    
-
 
                     <CardComponent 
                         projTitle = "Moody AI"
@@ -257,15 +255,15 @@ function Home() {
                         url = "https://github.com/rijulsarji/To-do-list"
                     />
 
-                    {/* <CardComponent 
-                        projTitle = "Granny's Advice"
-                        projDate = "June 2021"
-                        imgLink = {Granny}
-                        tags1 = "React"
-                        tags2 = "HTML & CSS"
-                        cardNum = '5'
-                        url = "https://github.com/rijulsarji/Granny-s-Advice"
-                    /> */}
+                    <CardComponent 
+                        projTitle = "Bookzilla"
+                        projDate = "August 2021"
+                        imgLink = {Bookzilla}
+                        tags1 = "React-Native"
+                        tags2 = "Android Development"
+                        cardNum = '8'
+                        url = "https://github.com/rijulsarji/Bookworm"
+                    />
 
                 </div>
             </div>
